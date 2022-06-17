@@ -1,0 +1,39 @@
+/*===== GERAL ====================================================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{    
+    /*Primary color*/
+    --primary-light: hsl(356, 100%, 66%); /*(CTA text):*/
+    --Very-light: hsl(355, 100%, 74%); /*(CTA hover background)*/
+    --Very-dark: hsl(208, 49%, 24%); /*(headings)*/
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%); /*(text)*/
+    --Grayish: hsl(240, 2%, 79%); /*(footer text)*/
+    --Very-dark-grayish: hsl(207, 13%, 34%); /*(body copy)*/
+    --Very-dark-black: hsl(240, 10%, 16%); /*(footer background)*/
+
+    /*Gradient*/
+    /*Background gradient - Intro/CTA mobile nav:*/
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+
+    /*Background gradient - body:*/
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+html,
+body{
+	width: 100%;
+	height: 100%;
+}
+body{
+    /* font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
+    font-size: 1.6rem;
+}
