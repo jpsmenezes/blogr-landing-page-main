@@ -1,4 +1,4 @@
-/*===== GERAL ====================================================*/
+/*===== GERAL =================================================*/
 *{
     padding: 0;
     margin: 0;
@@ -45,6 +45,12 @@ h2{
     color: var(--White);
     line-height: 140%;
 }
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--Very-dark);
+}
 a{
     text-decoration: none;   
 }
@@ -53,8 +59,16 @@ ul{
 }
 button{
 	background: none;
+
 	border: none;
+
 	cursor: pointer;
+}
+p{
+    font-size: 2.2rem;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: center;
 }
 .wrapper{
 	width:37.5rem;	
@@ -62,7 +76,7 @@ button{
 	padding-inline: 2.4rem;   
 }
 
-/*===== START ====================================================*/
+/*===== START =================================================*/
 #start{
     background-image: url(../images/bg-pattern-intro-mobile.svg),linear-gradient( var(--Very-light-red), var(--Light-red));  
     background-position:36% 35%;  
@@ -79,11 +93,9 @@ button{
 
     padding-top: 5.5rem;
 }
+#start .navigation button.close-menu,
 #start .navigation nav{
    display: none;  
-}
-#start .navigation button.close-menu{
-    display: none;
 }
 #start header h2{
     padding-top: 11.6rem;
@@ -122,4 +134,34 @@ button{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+/*===== MENU-EXPENDED =========================================*/
+body.menu-expended{
+    overflow: hidden;
+}
+body.menu-expended #start .navigation nav{
+    position: fixed;
+    
+    background-color: var(--White);
+    border-radius: 0.5rem;
+
+    display:flex;
+
+    
+}
+
+/*===== DESIGNED FOR THE FUTURE ===============================*/
+#designedForTheFuture header h3{
+    padding: 10.5rem 0 5rem;    
+}
+#designedForTheFuture .col-a{
+    display: flex;   
+    justify-content: center;
+    
+}
+#designedForTheFuture .col-b h3{
+    padding: 6rem 0 3rem;
+}
+#designedForTheFuture .col-b p{
+
 }
