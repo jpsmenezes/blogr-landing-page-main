@@ -37,6 +37,13 @@ body{
     font-family: 'Ubuntu', sans-serif; */
     font-size: 1.6rem;
 }
+h2{
+    font-family: 'Ubuntu', sans-serif;    
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: var(--White);
+    text-align: center;
+}
 a{
     text-decoration: none;   
 }
@@ -51,18 +58,32 @@ button{
 .wrapper{
 	width:37.5rem;	
 	margin-inline: auto;
-	padding-inline: 2.4rem;
-    background-color: blue;
+	padding-inline: 2.4rem;   
 }
 
 /*===== START ====================================================*/
+section#start{
+    background-image: url(../images/bg-pattern-intro-mobile.svg),linear-gradient( var(--Very-light-red), var(--Light-red));  
+    background-position:36% 35%;  
+    background-repeat: no-repeat;
+    background-size: 150rem;  
+   
+    height: 60rem;
+
+    border-radius: 0 0 0 10rem;
+}
 section .navigation{
     display: flex;
     justify-content: space-between;
+
+    padding-top: 5.5rem;
 }
 section .navigation nav{
    display: none;  
 }
 section .navigation button.close-menu{
     display: none;
+}
+section header h2{
+    padding-top: 20rem;
 }
