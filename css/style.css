@@ -37,3 +37,24 @@ body{
     font-family: 'Ubuntu', sans-serif; */
     font-size: 1.6rem;
 }
+a{
+    text-decoration: none;   
+}
+ul{
+    list-style: none;
+}
+.wrapper{
+	width:37.5rem;	
+	margin-inline: auto;
+	padding-inline: 2.4rem;
+    background-color: blue;
+}
+
+/*===== START ====================================================*/
+section .navigation{
+    display: flex;
+}
+section .navigation nav{
+    display: flex;
+    justify-content: space-between;
+}
