@@ -30,19 +30,20 @@
 html,
 body{
 	width: 100%;
-	height: 100%;
+	height: 100%;    
 }
 body{
     /* font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
 }
-h2{
-    font-family: 'Ubuntu', sans-serif;    
+h2{    
     font-size: 3.6rem;
     font-weight: 400;
-    color: var(--White);
     text-align: center;
+    color: var(--White);
+    line-height: 140%;
 }
 a{
     text-decoration: none;   
@@ -62,28 +63,63 @@ button{
 }
 
 /*===== START ====================================================*/
-section#start{
+#start{
     background-image: url(../images/bg-pattern-intro-mobile.svg),linear-gradient( var(--Very-light-red), var(--Light-red));  
     background-position:36% 35%;  
     background-repeat: no-repeat;
     background-size: 150rem;  
    
-    height: 60rem;
+    height: 65rem;
 
     border-radius: 0 0 0 10rem;
 }
-section .navigation{
+#start .navigation{
     display: flex;
     justify-content: space-between;
 
     padding-top: 5.5rem;
 }
-section .navigation nav{
+#start .navigation nav{
    display: none;  
 }
-section .navigation button.close-menu{
+#start .navigation button.close-menu{
     display: none;
 }
-section header h2{
-    padding-top: 20rem;
+#start header h2{
+    padding-top: 11.6rem;
+}
+#start header p{        
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--White);
+
+    padding-top: 2.5rem;
+    padding-bottom: 5.2rem;
+}
+#start header a{
+    width: 14rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+
+    border-radius: 5rem;        
+}
+#start header a:nth-child(1){
+    background-color: var(--White);
+    color: var(--Light-red);
+}
+#start header a:nth-child(2){
+    border: 1px solid var(--White);
+    color: var(--White);
+}
+#start .headerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
