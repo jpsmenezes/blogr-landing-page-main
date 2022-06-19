@@ -53,6 +53,12 @@ h3{
 
     padding: 6rem 0 3rem;
 }
+h4{
+    font-size: 1.8rem;
+    color: var(--White);
+
+    padding-bottom: 4rem;
+}
 a{
     text-decoration: none;   
 }
@@ -194,12 +200,12 @@ body.menu-expended #start .navigation nav{
 }
 
 /*===== FREE OPEN SIMPLE ======================================*/
+#freeOpenSimple{
+    margin-bottom: 10rem;
+}
 #freeOpenSimple .col-a{
     display: flex;
     justify-content: center;
-}
-#freeOpenSimple{
-    margin-bottom: 10rem;
 }
 
 /*===== FOOTER ===============================================*/
@@ -215,5 +221,19 @@ footer .wrapper{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+footer a.logo{
+    padding-bottom: 8rem;
+}
+footer .menu-footer a{
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: var(--Grayish);    
+}
+footer .menu-footer{
+    padding-bottom: 6rem;
+}
+footer .menu-footer:last-child{
+    padding-bottom: 0;
 }
 
