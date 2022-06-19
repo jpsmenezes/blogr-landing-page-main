@@ -149,14 +149,76 @@ body.menu-expended{
 }
 body.menu-expended #start .navigation nav{
     position: fixed;
-    
-    background-color: var(--White);
-    border-radius: 0.5rem;
+    top: 12.5rem;
+    left: 0;
+
+    width: 80%;
+    margin-inline: 10%;
 
     display:flex;
+    flex-direction: column;
+    align-items: center;    
 
     
+    background-color: var(--White);
+    border-radius: 0.5rem;    
 }
+.menu-expended .navigation .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+   
+    height: 100%;    
+    
+    padding-block: 3.5rem;
+}
+.menu-expended .navigation li>ul{
+    display: none;
+}
+.menu-expended .navigation .menu a{
+    font-family: 'Overpass', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Very-dark);    
+}
+.menu-expended .navigation .menu a img{
+    padding-left: 0.5rem;
+}
+.menu-expended .navigation nav .line{
+   width: 80%;
+   height: 1px;
+   background-color: var(--Grayish);
+}
+.menu-expended .navigation .loginAndSignUp{
+    padding-block: 3rem;
+    text-align: center;
+}
+.menu-expended .navigation .loginAndSignUp li:last-child,
+.menu-expended .navigation .loginAndSignUp li:first-child{
+    font-family: 'Overpass', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;   
+}
+.menu-expended .navigation .loginAndSignUp li:first-child a{
+    color: var(--Very-dark);
+}
+.menu-expended .navigation .loginAndSignUp li:last-child a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--White);
+
+    width: 15rem;
+    height: 5rem;
+    background: linear-gradient( to right, var(--Very-light-red), var(--Light-red));    
+
+    border-radius: 5rem;
+
+    margin-top: 2rem;
+}
+
+
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
 #designedForTheFuture{
