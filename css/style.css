@@ -198,6 +198,9 @@ body.menu-expended #start .navigation nav{
     display: flex;
     justify-content: center;
 }
+#freeOpenSimple{
+    margin-bottom: 10rem;
+}
 
 /*===== FOOTER ===============================================*/
 footer{   
