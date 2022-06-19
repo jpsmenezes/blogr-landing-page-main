@@ -190,7 +190,7 @@ body.menu-expended #start .navigation nav{
    background-color: var(--Grayish);
 }
 .menu-expended .navigation .loginAndSignUp{
-    padding-block: 3rem;
+    padding: 3rem 0 5rem;
     text-align: center;
 }
 .menu-expended .navigation .loginAndSignUp li:last-child,
@@ -216,6 +216,12 @@ body.menu-expended #start .navigation nav{
     border-radius: 5rem;
 
     margin-top: 2rem;
+}
+.navigation .loginAndSignUp li:last-child a:hover{
+    background: var(--Very-light);
+}
+.menu-expended .navigation .loginAndSignUp li:first-child a:hover{
+    color: var(--Grayish);
 }
 
 
