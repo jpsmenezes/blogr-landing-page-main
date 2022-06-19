@@ -13,6 +13,7 @@
     /*Neutral*/
     --White: hsl(0, 0%, 100%); /*(text)*/
     --Grayish: hsl(240, 2%, 79%); /*(footer text)*/
+    --Grayish-drop-menu: hsl(0, 0%, 93%); /*(background .drop menu)*/
     --Very-dark-grayish: hsl(207, 13%, 34%); /*(body copy)*/
     --Very-dark-black: hsl(240, 10%, 16%); /*(footer background)*/
 
@@ -147,33 +148,35 @@ p{
 body.menu-expended{
     overflow: hidden;
 }
+
 body.menu-expended #start .navigation nav{
     position: fixed;
     top: 12.5rem;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 80%;
-    margin-inline: 10%;
+    max-width: 50rem;    
 
     display:flex;
     flex-direction: column;
-    align-items: center;    
-
+    align-items: center;
     
     background-color: var(--White);
-    border-radius: 0.5rem;    
+    border-radius: 0.5rem;  
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.389);  
 }
-.menu-expended .navigation .menu{
+.menu-expended .navigation .menu{  
+
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    flex-direction: column;    
+    gap: 1rem;    
    
+    width: 100%;
     height: 100%;    
     
+    padding-inline: 4rem;
     padding-block: 3.5rem;
-}
-.menu-expended .navigation li>ul{
-    display: none;
 }
 .menu-expended .navigation .menu a{
     font-family: 'Overpass', sans-serif;
@@ -223,6 +226,51 @@ body.menu-expended #start .navigation nav{
 .menu-expended .navigation .loginAndSignUp li:first-child a:hover{
     color: var(--Grayish);
 }
+
+/*accordion*/
+.menu-expended .menu li a img:last-child{
+    display: none;
+}
+.menu-expended nav .menu .accordion-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.menu-expended .menu .drop{
+    max-height: 0rem;
+    width: 100%;
+    background-color: var(--Grayish-drop-menu);
+    
+    line-height: 250%;
+    
+    border-radius: .5rem;
+    margin-block: 2.5rem;
+
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    transition: max-height 650ms;
+}
+.menu-expended .menu .drop a{
+    color: var(--Very-dark-grayish);
+}
+.accordion-item:target .drop{
+    max-height: 20rem;
+}
+.accordion-item:target .accordion-link img:last-child{
+    display: inline;
+} 
+.accordion-item:target .accordion-link img:first-child{
+    display: none;
+} 
+
+
 
 
 
