@@ -50,6 +50,8 @@ h3{
     font-weight: 500;
     text-align: center;
     color: var(--Very-dark);
+
+    padding: 6rem 0 3rem;
 }
 a{
     text-decoration: none;   
@@ -65,10 +67,12 @@ button{
 	cursor: pointer;
 }
 p{
-    font-size: 2.2rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.8rem;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
+    color: var(--Very-dark-grayish);
 }
 .wrapper{
 	width:37.5rem;	
@@ -80,8 +84,7 @@ p{
 #start{
     background-image: url(../images/bg-pattern-intro-mobile.svg),linear-gradient( var(--Very-light-red), var(--Light-red));  
     background-position:36% 35%;  
-    background-repeat: no-repeat;
-    background-size: 150rem;  
+    background-repeat: no-repeat;   
    
     height: 65rem;
 
@@ -151,17 +154,43 @@ body.menu-expended #start .navigation nav{
 }
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
+#designedForTheFuture{
+    margin-bottom: 27.5rem;   
+}
+
 #designedForTheFuture header h3{
     padding: 10.5rem 0 5rem;    
 }
 #designedForTheFuture .col-a{
     display: flex;   
-    justify-content: center;
-    
+    justify-content: center;    
 }
-#designedForTheFuture .col-b h3{
-    padding: 6rem 0 3rem;
-}
-#designedForTheFuture .col-b p{
 
+/*===== STATE OF THE ART INFRASTRUCTURE =======================*/
+#stateOfTheArtInfrastructure{
+    background: url(../images/bg-pattern-circles.svg) no-repeat,linear-gradient( var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue)); 
+    background-position:50% -500%;  
+    background-size: 70rem, auto, auto;
+
+    border-radius: 0 10rem 0 10rem;   
 }
+#stateOfTheArtInfrastructure .col-a{
+    display: flex;
+    justify-content: center;
+}
+#stateOfTheArtInfrastructure h3{
+    padding-top: 0;
+}
+#stateOfTheArtInfrastructure .phone{   
+    width: 45rem;
+    transform: translateY(-20rem);
+}
+#stateOfTheArtInfrastructure .col-b{
+    transform: translateY(-15rem);   
+}
+#stateOfTheArtInfrastructure .col-b p{
+    color: var(--White);
+    padding-top: 2.5rem;    
+}
+
+
