@@ -5,6 +5,7 @@ document.querySelectorAll('.accordion-item').forEach(botao => botao.addEventList
     if(this.children[1].classList.contains("active")){
         this.children[1].classList.remove("active");
     }else{
+        drop.forEach(x => x.classList.remove('active'));
         this.children[1].classList.add("active"); //children retorna os filhos de um elemento nesse caso pegamos apenas o filho [1]
     }      
 }));
