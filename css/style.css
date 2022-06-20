@@ -148,7 +148,12 @@ p{
 body.menu-expended{
     overflow: hidden;
 }
-
+body.menu-expended #start .navigation button.close-menu{
+    display: block;
+}
+body.menu-expended #start .navigation button.open-menu{
+    display: none;
+}
 body.menu-expended #start .navigation nav{
     
     position: fixed;
@@ -170,13 +175,12 @@ body.menu-expended #start .navigation nav{
 }
 .menu-expended .navigation .menu{      
     display: flex;
-    flex-direction: column;    
-    gap: 1rem;    
+    flex-direction: column;       
    
     width: 100%;       
     
     padding-inline: 4rem;
-    padding-block: 3.5rem;
+    padding-top: 3.5rem;
 }
 .menu-expended .navigation .menu a{
     font-family: 'Overpass', sans-serif;
@@ -234,7 +238,9 @@ body.menu-expended #start .navigation nav{
 .menu-expended nav .menu .accordion-item{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center; 
+    
+    cursor: pointer;
 }
 .menu-expended .menu .drop{
     max-height: 0rem;
@@ -262,19 +268,6 @@ body.menu-expended #start .navigation nav{
 .menu-expended .menu .drop a{
     color: var(--Very-dark-grayish);
 }
-
-/* .accordion-item:target .drop{
-    max-height: 20rem;
-} */
-.accordion-item:target .accordion-link img:last-child{
-    display: inline;
-} 
-.accordion-item:target .accordion-link img:first-child{
-    display: none;
-} 
-
-
-
 
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
