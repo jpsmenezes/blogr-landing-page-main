@@ -231,19 +231,7 @@ body.menu-expended #start .navigation nav{
 .menu-expended .navigation .loginAndSignUp li:first-child a:hover{
     color: var(--Grayish);
 }
-/* .menu-expended .accordion-item{
-    margin-left: 2rem;
-
-    transition: transform 300ms ease-in-out;
-} */
-
-
-
-
-/*accordion*/
-/* .menu-expended .menu li a img:last-child{
-    display: none;
-} */
+/*accordion*/ 
 .menu-expended nav .menu .accordion-item{
     display: flex;
     flex-direction: column;
@@ -279,13 +267,13 @@ body.menu-expended #start .navigation nav{
     max-height: 20rem;
 }
 .accordion-item .accordion-link img:first-child{
-    display: inline-block;
+    display: inline-block;    
 }
 .accordion-item .accordion-link img:last-child{
     display: none;
 }
 .accordion-item.active .accordion-link img:first-child{
-    display: none;
+    display: none;   
 }
 .accordion-item.active .accordion-link img:last-child{
     display: inline-block;
@@ -296,7 +284,6 @@ body.menu-expended #start .navigation nav{
 #designedForTheFuture{
     margin-bottom: 27.5rem;   
 }
-
 #designedForTheFuture header h3{
     padding: 10.5rem 0 5rem;    
 }

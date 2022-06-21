@@ -16,8 +16,7 @@ function activeMenu(){
         this.classList.remove("active");       
     }else{        
         accordionItem.forEach(element => element.classList.remove('active'));
-        this.classList.add("active");           
-         
+        this.classList.add("active");         
     /*
         // this.children[1].classList.add("active");
         //children retorna os filhos de um elemento nesse caso pegamos apenas o filho [1] 
