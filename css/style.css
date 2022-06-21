@@ -37,7 +37,9 @@ body{
     /* font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.6rem;    
+    font-size: 1.6rem;   
+    
+    overflow: overlay;/*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
 }
 h2{    
     font-size: 3.6rem;
@@ -162,8 +164,7 @@ body.menu-expended #start .navigation nav{
     transform: translateX(-50%);
 
     width: 80%;
-    max-width: 50rem; 
-    height: calc(100vh - 12.5rem);   
+    max-width: 50rem;     
 
     display:flex;
     flex-direction: column;
@@ -230,11 +231,30 @@ body.menu-expended #start .navigation nav{
 .menu-expended .navigation .loginAndSignUp li:first-child a:hover{
     color: var(--Grayish);
 }
+/* .menu-expended .accordion-item{
+    margin-left: 2rem;
 
-/*accordion*/
-.menu-expended .menu li a img:last-child{
+    transition: transform 300ms ease-in-out;
+} */
+.accordion-link img:first-child{
+    display: inline-block;
+}
+.accordion-link img:last-child{
     display: none;
 }
+.accordion-link img.arrow:first-child{
+    display: none;
+}
+.accordion-link img.arrow:last-child{
+    display: inline-block;
+}
+
+
+
+/*accordion*/
+/* .menu-expended .menu li a img:last-child{
+    display: none;
+} */
 .menu-expended nav .menu .accordion-item{
     display: flex;
     flex-direction: column;
@@ -250,7 +270,7 @@ body.menu-expended #start .navigation nav{
     line-height: 250%;
     
     border-radius: .5rem;
-    margin-block: 2.5rem;
+    margin-block: 2rem;
 
     position: relative;
     
