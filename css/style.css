@@ -236,18 +236,7 @@ body.menu-expended #start .navigation nav{
 
     transition: transform 300ms ease-in-out;
 } */
-.accordion-link img:first-child{
-    display: inline-block;
-}
-.accordion-link img:last-child{
-    display: none;
-}
-.accordion-link img.arrow:first-child{
-    display: none;
-}
-.accordion-link img.arrow:last-child{
-    display: inline-block;
-}
+
 
 
 
@@ -282,11 +271,24 @@ body.menu-expended #start .navigation nav{
 
     transition: max-height 400ms;
 }
-.menu-expended .menu .drop.active{
-    max-height: 20rem;
-}
 .menu-expended .menu .drop a{
     color: var(--Very-dark-grayish);
+}
+/*active*/
+.accordion-item.active .drop{
+    max-height: 20rem;
+}
+.accordion-item .accordion-link img:first-child{
+    display: inline-block;
+}
+.accordion-item .accordion-link img:last-child{
+    display: none;
+}
+.accordion-item.active .accordion-link img:first-child{
+    display: none;
+}
+.accordion-item.active .accordion-link img:last-child{
+    display: inline-block;
 }
 
 
