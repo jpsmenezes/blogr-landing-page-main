@@ -29,6 +29,9 @@
 
     font-size: 62.5%; /* 1rem = 10px */
 }
+html{
+    scroll-behavior: smooth; /*deixar o scroll suave*/
+}
 html,
 body{
 	width: 100%;
@@ -385,5 +388,39 @@ footer .menu-footer{
 }
 footer .menu-footer:last-child{
     padding-bottom: 0;
+}
+
+/*===== BACK TO TOP BUTTON =============================================*/
+#backToTopButton{
+    position: fixed;
+	bottom: 1rem;
+	right: 3rem;
+
+	opacity: 0;
+	visibility: hidden;
+
+	transform: translateY(100%);
+	transition: 300ms;
+}
+#backToTopButton.show{
+    opacity: 1;
+	visibility: visible;
+
+	transform: translateY(0);
+}
+#backToTopButton circle{
+    fill: var(--primary-light);
+}
+
+/*===================================================================*/
+/*===== MEDIA QUERIES ===============================================*/
+@media (min-width: 1024px){
+/*=== GERAL =========================================================*/
+body{
+
+}
+
+
+
 }
 
