@@ -110,7 +110,7 @@ p{
     padding-top: 5.5rem;
 }
 #start .navigation button.close-menu,
-#start .navigation nav{
+.navigation nav{
    display: none;   
 }
 #start header h2{
@@ -164,7 +164,7 @@ p{
 body.menu-expended{
     overflow: hidden;
 }
-body.menu-expended > :not(#start){ /*vai aplicar para todos os elementos exceto o nav.*/
+body.menu-expended > :not(#start, #designedForTheFuture){ /*vai aplicar para todos os elementos exceto o nav.*/
 	visibility:hidden;
 }
 body.menu-expended #start .headerBtn{
@@ -314,7 +314,8 @@ body.menu-expended #start .navigation nav{
     margin-bottom: 27.5rem;   
 }
 #designedForTheFuture header h3{
-    padding: 10.5rem 0 5rem;    
+    padding: 10.5rem 0 5rem;
+    transform: none;     
 }
 #designedForTheFuture .col-a{
     display: flex;   
@@ -390,7 +391,7 @@ footer .menu-footer:last-child{
     padding-bottom: 0;
 }
 
-/*===== BACK TO TOP BUTTON =============================================*/
+/*===== BACK TO TOP BUTTON ===================================*/
 #backToTopButton{
     position: fixed;
 	bottom: 1rem;
@@ -412,14 +413,58 @@ footer .menu-footer:last-child{
     fill: var(--primary-light);
 }
 
-/*===================================================================*/
-/*===== MEDIA QUERIES ===============================================*/
+/*=========================================================*/
+/*===== MEDIA QUERIES =====================================*/
 @media (min-width: 1024px){
-/*=== GERAL =========================================================*/
-body{
 
+/*=== GERAL ===============================================*/
+.wrapper{
+    width: min(112rem, 100%);
+    display: grid;
+}
+.col-a{
+    grid-area: A;		
+}
+.col-b{
+    grid-area: B;
 }
 
+/*===== START =======================================================*/
+#start .navigation{
+   justify-content: initial;
+   gap: 6.5rem;
+}
+#start .navigation nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+#start .navigation button.close-menu,
+#start .navigation button.open-menu{
+    display: none;
+}
+.line{
+    display: none;
+}
+#start .navigation .menu{
+    display: flex;
+    gap: 3rem;
+}
+#start .navigation .accordion-link{
+    color: var(--White);
+}
+#start .navigation .menu .drop{
+    display: none;
+}
+#start .navigation .loginAndSignUp{
+    display: flex;
+    gap: 3rem;
+    
+}
+#start .navigation .loginAndSignUp a{
+    color: var(--White);
+}
 
 
 }

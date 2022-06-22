@@ -1,7 +1,7 @@
 window.addEventListener('scroll', onScroll);
+
 const accordionItem = document.querySelectorAll('.accordion-item');
 accordionItem.forEach(item => item.addEventListener('click', activeMenu)) ;
-
 document.querySelector('.open-menu').addEventListener('click', openMenu);
 document.querySelector('.close-menu').addEventListener('click', closeMenu);
 
@@ -39,14 +39,13 @@ function activeMenu(){
     */
     }  
 }
- //api de efeito que faz aparecer os elementos na tela quando rolar a tela para baixo
+ 
 ScrollReveal({
     origin: 'bottom',
     distance: '50px',
     duration: 700,   
   }).reveal(`
-    #start .wrapper,
-    #designedForTheFuture header,
+    #start .wrapper,   
     #designedForTheFuture .col-a,
     #designedForTheFuture .col-b h3,
     #designedForTheFuture .col-b p,
