@@ -15,6 +15,7 @@
     --Grayish: hsl(240, 2%, 79%); /*(footer text)*/
     --Grayish-drop-menu: hsl(0, 0%, 93%); /*(background .drop menu)*/
     --Very-dark-grayish: hsl(207, 13%, 34%); /*(body copy)*/
+    --Very-dark-grayish2: hsl(206, 13%, 45%); /*(body copy)*/
     --Very-dark-black: hsl(240, 10%, 16%); /*(footer background)*/
 
     /*Gradient*/
@@ -95,7 +96,7 @@ p{
     background: url(../images/bg-pattern-intro-mobile.svg) no-repeat,linear-gradient( var(--Very-light-red), var(--Light-red));  
     background-position:36% 35%; 
 
-    height: 65rem;
+    height: 60rem;
 
     border-radius: 0 0 0 10rem;
 }
@@ -107,7 +108,7 @@ p{
 }
 #start .navigation button.close-menu,
 #start .navigation nav{
-   display: none;  
+   display: none;   
 }
 #start header h2{
     padding-top: 11.6rem;
@@ -150,21 +151,27 @@ p{
 body.menu-expended{
     overflow: hidden;
 }
+body.menu-expended > :not(#start){ /*vai aplicar para todos os elementos exceto o nav.*/
+	visibility:hidden;
+}
+body.menu-expended #start .headerBtn{
+    display: none;
+}
 body.menu-expended #start .navigation button.close-menu{
     display: block;
 }
 body.menu-expended #start .navigation button.open-menu{
     display: none;
 }
-body.menu-expended #start .navigation nav{
-    
+body.menu-expended #start .navigation nav{    
     position: fixed;
     top: 12.5rem;
     left: 50%;
-    transform: translateX(-50%);
 
-    width: 80%;
-    max-width: 50rem;     
+    transform: translateX(-50%);       
+   
+    width: 90%;
+    max-width: 50rem;    
 
     display:flex;
     flex-direction: column;
@@ -181,7 +188,7 @@ body.menu-expended #start .navigation nav{
     width: 100%;       
     
     padding-inline: 4rem;
-    padding-top: 3.5rem;
+    padding-top: 3.5rem;    
 }
 .menu-expended .navigation .menu a{
     font-family: 'Overpass', sans-serif;
@@ -229,7 +236,7 @@ body.menu-expended #start .navigation nav{
     background: var(--Very-light);
 }
 .menu-expended .navigation .loginAndSignUp li:first-child a:hover{
-    color: var(--Grayish);
+    color: var(--primary-light);
 }
 /*accordion*/ 
 .menu-expended nav .menu .accordion-item{
@@ -247,7 +254,7 @@ body.menu-expended #start .navigation nav{
     line-height: 250%;
     
     border-radius: .5rem;
-    margin-block: 2rem;
+    margin-block: 1.5rem;
 
     position: relative;
     
@@ -257,14 +264,23 @@ body.menu-expended #start .navigation nav{
 
     overflow: hidden;
 
-    transition: max-height 400ms;
+    transition: max-height 300ms;
 }
 .menu-expended .menu .drop a{
     color: var(--Very-dark-grayish);
+    
+    transition: 200ms;
+}
+.menu-expended .menu .drop a:hover{
+    color: var(--primary-light);
 }
 /*active*/
 .accordion-item.active .drop{
-    max-height: 20rem;
+    max-height: 25rem;
+    padding-block: 2rem;
+}
+.menu-expended .accordion-item.active a{
+    color: var(--Very-dark-grayish2);
 }
 .accordion-item .accordion-link img:first-child{
     display: inline-block;    
