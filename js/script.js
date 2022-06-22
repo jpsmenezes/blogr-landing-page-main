@@ -33,6 +33,25 @@ function activeMenu(){
     }  
 }
 
-     
+ //api de efeito que faz aparecer os elementos na tela quando rolar a tela para baixo
+ScrollReveal({
+    origin: 'bottom',
+    distance: '50px',
+    duration: 700,   
+  }).reveal(`
+    #start .wrapper,
+    #designedForTheFuture header,
+    #designedForTheFuture .col-a,
+    #designedForTheFuture .col-b h3,
+    #designedForTheFuture .col-b p,
+    #stateOfTheArtInfrastructure .col-a,
+    #stateOfTheArtInfrastructure .col-b,
+    #freeOpenSimple .col-a,
+    #freeOpenSimple .col-b h3,
+    #freeOpenSimple .col-b p,
+    footer .logo,
+    footer h4,
+    footer ul
+  `)    
 
 
