@@ -135,11 +135,21 @@ p{
 }
 #start header a:nth-child(1){
     background-color: var(--White);
-    color: var(--Light-red);
+    color: var(--Very-light);
+    transition: 100ms;
+}
+#start header a:nth-child(1):hover{
+    background-color: var(--Very-light);
+    color: var(--White);
 }
 #start header a:nth-child(2){
     border: 1px solid var(--White);
     color: var(--White);
+    transition: 100ms;
+}
+#start header a:nth-child(2):hover{
+    background-color: var(--White);
+    color: var(--Very-light);
 }
 #start .headerBtn{
     display: flex;
@@ -366,6 +376,9 @@ footer .menu-footer a{
     font-size: 1.8rem;
     line-height: 180%;
     color: var(--Grayish);    
+}
+footer .menu-footer a:hover{
+    text-decoration:underline;
 }
 footer .menu-footer{
     padding-bottom: 6rem;
