@@ -164,7 +164,7 @@ p{
 body.menu-expended{
     overflow: hidden;
 }
-body.menu-expended > :not(#start, #designedForTheFuture){ /*vai aplicar para todos os elementos exceto o nav.*/
+body.menu-expended > :not(#start, #designedForTheFuture){ /*vai aplicar para todos os elementos exceto os elementos adicionados.*/
 	visibility:hidden;
 }
 body.menu-expended #start .headerBtn{
@@ -203,14 +203,11 @@ body.menu-expended #start .navigation nav{
     padding-inline: 4rem;
     padding-top: 3.5rem;    
 }
-.menu-expended .navigation .menu a{
+.navigation .menu a{
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
     font-weight: 600;
     color: var(--Very-dark);    
-}
-.menu-expended .navigation .menu a img{
-    padding-left: 0.5rem;
 }
 .menu-expended .navigation nav .line{
    width: 80%;
@@ -259,7 +256,7 @@ body.menu-expended #start .navigation nav{
     
     cursor: pointer;
 }
-.menu-expended .menu .drop{
+.menu .drop{
     max-height: 0rem;
     width: 100%;
     background-color: var(--Grayish-drop-menu);
@@ -279,12 +276,12 @@ body.menu-expended #start .navigation nav{
 
     transition: max-height 300ms;
 }
-.menu-expended .menu .drop a{
+.menu .drop a{
     color: var(--Very-dark-grayish);
     
     transition: 200ms;
 }
-.menu-expended .menu .drop a:hover{
+.menu .drop a:hover{
     color: var(--primary-light);
 }
 /*active*/
@@ -292,20 +289,23 @@ body.menu-expended #start .navigation nav{
     max-height: 25rem;
     padding-block: 2rem;
 }
-.menu-expended .accordion-item.active a{
+.accordion-item.active a{
     color: var(--Very-dark-grayish2);
 }
-.accordion-item .accordion-link img:first-child{
+.accordion-item .accordion-link svg:first-child{
     display: inline-block;    
 }
-.accordion-item .accordion-link img:last-child{
+.accordion-item .accordion-link svg:last-child{
     display: none;
 }
-.accordion-item.active .accordion-link img:first-child{
+.accordion-item.active .accordion-link svg:first-child{
     display: none;   
 }
-.accordion-item.active .accordion-link img:last-child{
+.accordion-item.active .accordion-link svg:last-child{
     display: inline-block;
+}
+.accordion-item .accordion-link svg{
+    margin-left: 0.5rem;
 }
 
 
@@ -430,8 +430,7 @@ footer .menu-footer:last-child{
 }
 
 /*===== START =======================================================*/
-#start .navigation{
-   justify-content: initial;
+#start .navigation{   
    gap: 6.5rem;
 }
 #start .navigation nav{
@@ -440,27 +439,31 @@ footer .menu-footer:last-child{
    align-items: center;
    width: 100%;
 }
+.line,
 #start .navigation button.close-menu,
 #start .navigation button.open-menu{
     display: none;
 }
-.line{
-    display: none;
-}
 #start .navigation .menu{
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
 }
 #start .navigation .accordion-link{
     color: var(--White);
 }
-#start .navigation .menu .drop{
-    display: none;
+.accordion-item .accordion-link svg path{
+    stroke: var(--White);
+}
+#start .navigation .accordion-item .drop{
+    position: absolute;
+
+    width: 17rem;
+    
+    transform: translateX(-2rem);    
 }
 #start .navigation .loginAndSignUp{
     display: flex;
     gap: 3rem;
-    
 }
 #start .navigation .loginAndSignUp a{
     color: var(--White);
