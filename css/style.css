@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     /*Primary color*/
     --primary-light: hsl(356, 100%, 66%);
@@ -40,18 +39,15 @@
     font-size: 62.5%;
     /* 1rem = 10px */
 }
-
 html {
     scroll-behavior: smooth;
     /*deixar o scroll suave*/
 }
-
 html,
 body {
     width: 100%;
     height: 100%;
 }
-
 body {
     /* font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
@@ -61,7 +57,6 @@ body {
     overflow: overlay;
     /*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
 }
-
 h2 {
     font-size: 3.6rem;
     font-weight: 400;
@@ -69,7 +64,6 @@ h2 {
     color: var(--White);
     line-height: 140%;
 }
-
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
@@ -78,28 +72,23 @@ h3 {
 
     padding: 6rem 0 3rem;
 }
-
 h4 {
     font-size: 1.8rem;
     color: var(--White);
 
     padding-bottom: 4rem;
 }
-
 a {
     text-decoration: none;
 }
-
 ul {
     list-style: none;
 }
-
 button {
     background: none;
     border: none;
     cursor: pointer;
 }
-
 p {
     font-family: 'Overpass', sans-serif;
     font-size: 1.8rem;
@@ -108,13 +97,11 @@ p {
     text-align: center;
     color: var(--Very-dark-grayish);
 }
-
 .wrapper {
     width: min(37.5rem, 100%);
     margin-inline: auto;
     padding-inline: 2.5rem;
 }
-
 .col-a img {
     width: min(37.5rem, 100%);
 }
@@ -128,23 +115,19 @@ p {
 
     border-radius: 0 0 0 10rem;
 }
-
 #start .navigation {
     display: flex;
     justify-content: space-between;
 
     padding-top: 5.5rem;
 }
-
 #start .navigation button.close-menu,
 .navigation nav {
     display: none;
 }
-
 #start header h2 {
     padding-top: 11.6rem;
 }
-
 #start header p {
     font-weight: 400;
     font-size: 2rem;
@@ -153,7 +136,6 @@ p {
     padding-top: 2.5rem;
     padding-bottom: 5.2rem;
 }
-
 #start header a {
     width: 15rem;
     height: 5rem;
@@ -166,58 +148,47 @@ p {
 
     border-radius: 5rem;
 }
-
 #start header a:nth-child(1) {
     background-color: var(--White);
     color: var(--Very-light);
     transition: 100ms;
 }
-
 #start header a:nth-child(1):hover {
     background-color: var(--Very-light);
     color: var(--White);
 }
-
 #start header a:nth-child(2) {
     border: 1px solid var(--White);
     color: var(--White);
     transition: 100ms;
 }
-
 #start header a:nth-child(2):hover {
     background-color: var(--White);
     color: var(--Very-light);
 }
-
 #start .headerBtn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-
 /*===== MENU-EXPENDED =========================================*/
 body.menu-expended {
     overflow: hidden;
 }
-
 body.menu-expended> :not(#start, #designedForTheFuture) {
     /*vai aplicar para todos os elementos exceto os elementos adicionados.*/
     visibility: hidden;
 }
-
 body.menu-expended #start .headerBtn {
     display: none;
 }
-
 body.menu-expended #start .navigation button.close-menu {
     display: block;
 }
-
 body.menu-expended #start .navigation button.open-menu {
     display: none;
 }
-
 body.menu-expended #start .navigation nav {
     position: fixed;
     top: 12.5rem;
@@ -236,7 +207,6 @@ body.menu-expended #start .navigation nav {
     border-radius: 0.5rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.389);
 }
-
 .menu-expended .navigation .menu {
     display: flex;
     flex-direction: column;
@@ -246,36 +216,30 @@ body.menu-expended #start .navigation nav {
     padding-inline: 4rem;
     padding-top: 3.5rem;
 }
-
 .navigation .menu a {
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
     font-weight: 600;
     color: var(--Very-dark);
 }
-
 .menu-expended .navigation nav .line {
     width: 80%;
     height: 1px;
     background-color: var(--Grayish);
 }
-
 .menu-expended .navigation .loginAndSignUp {
     padding: 3rem 0 5rem;
     text-align: center;
 }
-
 .navigation .loginAndSignUp li:last-child,
 .navigation .loginAndSignUp li:first-child {
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
     font-weight: 600;
 }
-
 .navigation .loginAndSignUp li:first-child a {
     color: var(--Very-dark);
 }
-
 .menu-expended .navigation .loginAndSignUp li:last-child a {
     display: flex;
     align-items: center;
@@ -291,11 +255,9 @@ body.menu-expended #start .navigation nav {
 
     margin-top: 2rem;
 }
-
 #start .navigation .loginAndSignUp li:last-child a:hover {
     background: var(--Very-light);
 }
-
 .menu-expended .navigation .loginAndSignUp li:first-child a:hover {
     color: var(--primary-light);
 }
@@ -308,7 +270,6 @@ body.menu-expended #start .navigation nav {
 
     cursor: pointer;
 }
-
 .menu .drop {
     max-height: 0rem;
     width: 100%;
@@ -329,58 +290,46 @@ body.menu-expended #start .navigation nav {
 
     transition: max-height 300ms;
 }
-
 .menu .drop a {
     color: var(--Very-dark-grayish);
 
     transition: 200ms;
 }
-
 .menu .drop a:hover {
     color: var(--primary-light);
 }
-
 /*active*/
 .accordion-item.active .drop {
     max-height: 25rem;
     padding-block: 2rem;
 }
-
 .accordion-item.active a {
     color: var(--Very-dark-grayish2);
 }
-
 .accordion-item .accordion-link svg:first-child {
     display: inline-block;
 }
-
 .accordion-item .accordion-link svg:last-child {
     display: none;
 }
-
 .accordion-item.active .accordion-link svg:first-child {
     display: none;
 }
-
 .accordion-item.active .accordion-link svg:last-child {
     display: inline-block;
 }
-
 .accordion-item .accordion-link svg {
     margin-left: 0.5rem;
 }
-
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
 #designedForTheFuture {
     margin-bottom: 27.5rem;
 }
-
 #designedForTheFuture header h3 {
     padding: 10.5rem 0 5rem;
     transform: none;
 }
-
 #designedForTheFuture .col-a {
     display: flex;
     justify-content: center;
@@ -396,24 +345,19 @@ body.menu-expended #start .navigation nav {
 
     margin-bottom: 8rem;
 }
-
 #stateOfTheArtInfrastructure .col-a {
     display: flex;
     justify-content: center;
 }
-
 #stateOfTheArtInfrastructure h3 {
     padding-top: 0;
 }
-
 #stateOfTheArtInfrastructure .phone {
     transform: translateY(-17rem);
 }
-
 #stateOfTheArtInfrastructure .col-b {
     transform: translateY(-13rem);
 }
-
 #stateOfTheArtInfrastructure .col-b p {
     color: var(--White);
     padding-top: 2.5rem;
@@ -423,7 +367,6 @@ body.menu-expended #start .navigation nav {
 #freeOpenSimple {
     margin-bottom: 10rem;
 }
-
 #freeOpenSimple .col-a {
     display: flex;
     justify-content: center;
@@ -437,32 +380,26 @@ footer {
 
     padding-block: 7.5rem;
 }
-
 footer .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 footer a.logo {
     padding-bottom: 8rem;
 }
-
 footer .menu-footer a {
     font-size: 1.8rem;
     line-height: 180%;
     color: var(--Grayish);
 }
-
 footer .menu-footer a:hover {
     text-decoration: underline;
 }
-
 footer .menu-footer {
     padding-bottom: 6rem;
 }
-
 footer .menu-footer:last-child {
     padding-bottom: 0;
 }
@@ -479,14 +416,12 @@ footer .menu-footer:last-child {
     transform: translateY(100%);
     transition: 300ms;
 }
-
 #backToTopButton.show {
     opacity: 1;
     visibility: visible;
 
     transform: translateY(0);
 }
-
 #backToTopButton circle {
     fill: var(--primary-light);
 }
@@ -500,11 +435,9 @@ footer .menu-footer:last-child {
         width: min(112rem, 100%);
         display: grid;
     }
-
     .col-a {
         grid-area: A;
     }
-
     .col-b {
         grid-area: B;
     }
@@ -518,43 +451,35 @@ footer .menu-footer:last-child {
 
         border-radius: 0 0 0 10rem;
     }
-
     #start .navigation {
         gap: 6.5rem;
     }
-
     #start .navigation nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
-
     .line,
     #start .navigation button.close-menu,
     #start .navigation button.open-menu {
         display: none;
     }
-
     #start .navigation .menu {
         display: flex;
         gap: 4rem;
     }
-
     #start .navigation .accordion-link {
         color: var(--White);
         cursor: pointer;
     }
-
     #start .loginAndSignUp li:first-child a:hover,
     #start .navigation .accordion-link:hover {
         text-decoration: underline;
     }
-
     .accordion-item .accordion-link svg path {
         stroke: var(--White);
     }
-
     #start .navigation .accordion-item .drop {
         position: absolute;
 
@@ -562,17 +487,14 @@ footer .menu-footer:last-child {
 
         transform: translateX(-2rem);
     }
-
     #start .navigation .loginAndSignUp {
         display: flex;
         align-items: center;
         gap: 3rem;
     }
-
     #start .navigation .loginAndSignUp a {
         color: var(--White);
     }
-
     #start .loginAndSignUp li:last-child a {
         padding-block: 1rem;
         padding-inline: 4rem;
@@ -586,11 +508,9 @@ footer .menu-footer:last-child {
 
         border-radius: 5rem;
     }
-
     #start .loginAndSignUp li:last-child a:hover {
         color: var(--White);
     }
-
     #start .loginAndSignUp li:first-child a {
         display: flex;
     }
