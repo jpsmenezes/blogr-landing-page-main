@@ -1,22 +1,32 @@
 /*===== GERAL =================================================*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{    
+
+:root {
     /*Primary color*/
-    --primary-light: hsl(356, 100%, 66%); /*(CTA text):*/
-    --Very-light: hsl(355, 100%, 74%); /*(CTA hover background)*/
-    --Very-dark: hsl(208, 49%, 24%); /*(headings)*/
+    --primary-light: hsl(356, 100%, 66%);
+    /*(CTA text):*/
+    --Very-light: hsl(355, 100%, 74%);
+    /*(CTA hover background)*/
+    --Very-dark: hsl(208, 49%, 24%);
+    /*(headings)*/
 
     /*Neutral*/
-    --White: hsl(0, 0%, 100%); /*(text)*/
-    --Grayish: hsl(240, 2%, 79%); /*(footer text)*/
-    --Grayish-drop-menu: hsl(0, 0%, 93%); /*(background .drop menu)*/
-    --Very-dark-grayish: hsl(207, 13%, 34%); /*(body copy)*/
-    --Very-dark-grayish2: hsl(206, 13%, 45%); /*(body copy)*/
-    --Very-dark-black: hsl(240, 10%, 16%); /*(footer background)*/
+    --White: hsl(0, 0%, 100%);
+    /*(text)*/
+    --Grayish: hsl(240, 2%, 79%);
+    /*(footer text)*/
+    --Grayish-drop-menu: hsl(0, 0%, 93%);
+    /*(background .drop menu)*/
+    --Very-dark-grayish: hsl(207, 13%, 34%);
+    /*(body copy)*/
+    --Very-dark-grayish2: hsl(206, 13%, 45%);
+    /*(body copy)*/
+    --Very-dark-black: hsl(240, 10%, 16%);
+    /*(footer background)*/
 
     /*Gradient*/
     /*Background gradient - Intro/CTA mobile nav:*/
@@ -27,32 +37,40 @@
     --Very-dark-gray-blue: hsl(237, 17%, 21%);
     --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
-html{
-    scroll-behavior: smooth; /*deixar o scroll suave*/
+
+html {
+    scroll-behavior: smooth;
+    /*deixar o scroll suave*/
 }
+
 html,
-body{
-	width: 100%;
-	height: 100%;    
+body {
+    width: 100%;
+    height: 100%;
 }
-body{
+
+body {
     /* font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.6rem;   
-    
-    overflow: overlay;/*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
+    font-size: 1.6rem;
+
+    overflow: overlay;
+    /*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
 }
-h2{    
+
+h2 {
     font-size: 3.6rem;
     font-weight: 400;
     text-align: center;
     color: var(--White);
     line-height: 140%;
 }
-h3{
+
+h3 {
     font-size: 2.8rem;
     font-weight: 500;
     text-align: center;
@@ -60,24 +78,29 @@ h3{
 
     padding: 6rem 0 3rem;
 }
-h4{
+
+h4 {
     font-size: 1.8rem;
     color: var(--White);
 
     padding-bottom: 4rem;
 }
-a{
-    text-decoration: none;   
+
+a {
+    text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
-button{
-	background: none;
-	border: none;
-	cursor: pointer;
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
-p{
+
+p {
     font-family: 'Overpass', sans-serif;
     font-size: 1.8rem;
     line-height: 150%;
@@ -85,46 +108,53 @@ p{
     text-align: center;
     color: var(--Very-dark-grayish);
 }
-.wrapper{
-	width: min(37.5rem, 100%);	
-	margin-inline: auto;
-	padding-inline: 2.5rem;   
+
+.wrapper {
+    width: min(37.5rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.5rem;
 }
-.col-a img{    
-    width: min(37.5rem, 100%);      
+
+.col-a img {
+    width: min(37.5rem, 100%);
 }
 
 /*===== START =================================================*/
-#start{
-    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat,linear-gradient( var(--Very-light-red), var(--Light-red));  
-    background-position:36% 35%; 
+#start {
+    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat, linear-gradient(var(--Very-light-red), var(--Light-red));
+    background-position: 36% 35%;
 
     height: 60rem;
 
     border-radius: 0 0 0 10rem;
 }
-#start .navigation{
+
+#start .navigation {
     display: flex;
     justify-content: space-between;
 
     padding-top: 5.5rem;
 }
+
 #start .navigation button.close-menu,
-.navigation nav{
-   display: none;   
+.navigation nav {
+    display: none;
 }
-#start header h2{
+
+#start header h2 {
     padding-top: 11.6rem;
 }
-#start header p{        
+
+#start header p {
     font-weight: 400;
-    font-size: 2rem;   
+    font-size: 2rem;
     color: var(--White);
 
     padding-top: 2.5rem;
     padding-bottom: 5.2rem;
 }
-#start header a{
+
+#start header a {
     width: 15rem;
     height: 5rem;
 
@@ -134,100 +164,119 @@ p{
 
     font-weight: 700;
 
-    border-radius: 5rem;        
+    border-radius: 5rem;
 }
-#start header a:nth-child(1){
+
+#start header a:nth-child(1) {
     background-color: var(--White);
     color: var(--Very-light);
     transition: 100ms;
 }
-#start header a:nth-child(1):hover{
+
+#start header a:nth-child(1):hover {
     background-color: var(--Very-light);
     color: var(--White);
 }
-#start header a:nth-child(2){
+
+#start header a:nth-child(2) {
     border: 1px solid var(--White);
     color: var(--White);
     transition: 100ms;
 }
-#start header a:nth-child(2):hover{
+
+#start header a:nth-child(2):hover {
     background-color: var(--White);
     color: var(--Very-light);
 }
-#start .headerBtn{
+
+#start .headerBtn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
+
 /*===== MENU-EXPENDED =========================================*/
-body.menu-expended{
+body.menu-expended {
     overflow: hidden;
 }
-body.menu-expended > :not(#start, #designedForTheFuture){ /*vai aplicar para todos os elementos exceto os elementos adicionados.*/
-	visibility:hidden;
+
+body.menu-expended> :not(#start, #designedForTheFuture) {
+    /*vai aplicar para todos os elementos exceto os elementos adicionados.*/
+    visibility: hidden;
 }
-body.menu-expended #start .headerBtn{
+
+body.menu-expended #start .headerBtn {
     display: none;
 }
-body.menu-expended #start .navigation button.close-menu{
+
+body.menu-expended #start .navigation button.close-menu {
     display: block;
 }
-body.menu-expended #start .navigation button.open-menu{
+
+body.menu-expended #start .navigation button.open-menu {
     display: none;
 }
-body.menu-expended #start .navigation nav{    
+
+body.menu-expended #start .navigation nav {
     position: fixed;
     top: 12.5rem;
     left: 50%;
 
-    transform: translateX(-50%);       
-   
-    width: 90%;
-    max-width: 50rem;    
+    transform: translateX(-50%);
 
-    display:flex;
+    width: 90%;
+    max-width: 50rem;
+
+    display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     background-color: var(--White);
-    border-radius: 0.5rem;  
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.389);  
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.389);
 }
-.menu-expended .navigation .menu{      
+
+.menu-expended .navigation .menu {
     display: flex;
-    flex-direction: column;       
-   
-    width: 100%;       
-    
+    flex-direction: column;
+
+    width: 100%;
+
     padding-inline: 4rem;
-    padding-top: 3.5rem;    
+    padding-top: 3.5rem;
 }
-.navigation .menu a{
+
+.navigation .menu a {
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--Very-dark);    
+    color: var(--Very-dark);
 }
-.menu-expended .navigation nav .line{
-   width: 80%;
-   height: 1px;
-   background-color: var(--Grayish);
+
+.menu-expended .navigation nav .line {
+    width: 80%;
+    height: 1px;
+    background-color: var(--Grayish);
 }
-.menu-expended .navigation .loginAndSignUp{
+
+.menu-expended .navigation .loginAndSignUp {
     padding: 3rem 0 5rem;
     text-align: center;
 }
-.menu-expended .navigation .loginAndSignUp li:last-child,
-.menu-expended .navigation .loginAndSignUp li:first-child{
+
+.navigation .loginAndSignUp li:last-child,
+.navigation .loginAndSignUp li:first-child {
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
-    font-weight: 600;   
+    font-weight: 600;
 }
-.menu-expended .navigation .loginAndSignUp li:first-child a{
+
+.navigation .loginAndSignUp li:first-child a {
     color: var(--Very-dark);
 }
-.menu-expended .navigation .loginAndSignUp li:last-child a{
+
+.menu-expended .navigation .loginAndSignUp li:last-child a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,38 +285,42 @@ body.menu-expended #start .navigation nav{
 
     width: 15rem;
     height: 5rem;
-    background: linear-gradient( to right, var(--Very-light-red), var(--Light-red));    
+    background: linear-gradient(to right, var(--Very-light-red), var(--Light-red));
 
     border-radius: 5rem;
 
     margin-top: 2rem;
 }
-.navigation .loginAndSignUp li:last-child a:hover{
+
+#start .navigation .loginAndSignUp li:last-child a:hover {
     background: var(--Very-light);
 }
-.menu-expended .navigation .loginAndSignUp li:first-child a:hover{
+
+.menu-expended .navigation .loginAndSignUp li:first-child a:hover {
     color: var(--primary-light);
 }
-/*accordion*/ 
-.menu-expended nav .menu .accordion-item{
+
+/*accordion*/
+.menu-expended nav .menu .accordion-item {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    
+    align-items: center;
+
     cursor: pointer;
 }
-.menu .drop{
+
+.menu .drop {
     max-height: 0rem;
     width: 100%;
     background-color: var(--Grayish-drop-menu);
-    
+
     line-height: 250%;
-    
+
     border-radius: .5rem;
     margin-block: 1.5rem;
 
     position: relative;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,199 +329,272 @@ body.menu-expended #start .navigation nav{
 
     transition: max-height 300ms;
 }
-.menu .drop a{
+
+.menu .drop a {
     color: var(--Very-dark-grayish);
-    
+
     transition: 200ms;
 }
-.menu .drop a:hover{
+
+.menu .drop a:hover {
     color: var(--primary-light);
 }
+
 /*active*/
-.accordion-item.active .drop{
+.accordion-item.active .drop {
     max-height: 25rem;
     padding-block: 2rem;
 }
-.accordion-item.active a{
+
+.accordion-item.active a {
     color: var(--Very-dark-grayish2);
 }
-.accordion-item .accordion-link svg:first-child{
-    display: inline-block;    
-}
-.accordion-item .accordion-link svg:last-child{
-    display: none;
-}
-.accordion-item.active .accordion-link svg:first-child{
-    display: none;   
-}
-.accordion-item.active .accordion-link svg:last-child{
+
+.accordion-item .accordion-link svg:first-child {
     display: inline-block;
 }
-.accordion-item .accordion-link svg{
+
+.accordion-item .accordion-link svg:last-child {
+    display: none;
+}
+
+.accordion-item.active .accordion-link svg:first-child {
+    display: none;
+}
+
+.accordion-item.active .accordion-link svg:last-child {
+    display: inline-block;
+}
+
+.accordion-item .accordion-link svg {
     margin-left: 0.5rem;
 }
 
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
-#designedForTheFuture{
-    margin-bottom: 27.5rem;   
+#designedForTheFuture {
+    margin-bottom: 27.5rem;
 }
-#designedForTheFuture header h3{
+
+#designedForTheFuture header h3 {
     padding: 10.5rem 0 5rem;
-    transform: none;     
-}
-#designedForTheFuture .col-a{
-    display: flex;   
-    justify-content: center;     
+    transform: none;
 }
 
-/*===== STATE OF THE ART INFRASTRUCTURE =======================*/
-#stateOfTheArtInfrastructure{
-    background: url(../images/bg-pattern-circles.svg) no-repeat,linear-gradient( var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue)); 
-    background-position:50% -1000%;  
-    background-size: 60rem, auto, auto;
-
-    border-radius: 0 10rem 0 10rem;  
-    
-    margin-bottom: 8rem;
-}
-#stateOfTheArtInfrastructure .col-a{
+#designedForTheFuture .col-a {
     display: flex;
     justify-content: center;
 }
-#stateOfTheArtInfrastructure h3{
+
+/*===== STATE OF THE ART INFRASTRUCTURE =======================*/
+#stateOfTheArtInfrastructure {
+    background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+    background-position: 50% -1000%;
+    background-size: 60rem, auto, auto;
+
+    border-radius: 0 10rem 0 10rem;
+
+    margin-bottom: 8rem;
+}
+
+#stateOfTheArtInfrastructure .col-a {
+    display: flex;
+    justify-content: center;
+}
+
+#stateOfTheArtInfrastructure h3 {
     padding-top: 0;
 }
-#stateOfTheArtInfrastructure .phone{     
+
+#stateOfTheArtInfrastructure .phone {
     transform: translateY(-17rem);
 }
-#stateOfTheArtInfrastructure .col-b{
-    transform: translateY(-13rem);   
+
+#stateOfTheArtInfrastructure .col-b {
+    transform: translateY(-13rem);
 }
-#stateOfTheArtInfrastructure .col-b p{
+
+#stateOfTheArtInfrastructure .col-b p {
     color: var(--White);
-    padding-top: 2.5rem;    
+    padding-top: 2.5rem;
 }
 
 /*===== FREE OPEN SIMPLE ======================================*/
-#freeOpenSimple{
+#freeOpenSimple {
     margin-bottom: 10rem;
 }
-#freeOpenSimple .col-a{
+
+#freeOpenSimple .col-a {
     display: flex;
     justify-content: center;
 }
 
 /*===== FOOTER ===============================================*/
-footer{   
+footer {
     background-color: var(--Very-dark-black);
 
     border-radius: 0 10rem 0 0;
 
     padding-block: 7.5rem;
 }
-footer .wrapper{
+
+footer .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-footer a.logo{
+
+footer a.logo {
     padding-bottom: 8rem;
 }
-footer .menu-footer a{
+
+footer .menu-footer a {
     font-size: 1.8rem;
     line-height: 180%;
-    color: var(--Grayish);    
+    color: var(--Grayish);
 }
-footer .menu-footer a:hover{
-    text-decoration:underline;
+
+footer .menu-footer a:hover {
+    text-decoration: underline;
 }
-footer .menu-footer{
+
+footer .menu-footer {
     padding-bottom: 6rem;
 }
-footer .menu-footer:last-child{
+
+footer .menu-footer:last-child {
     padding-bottom: 0;
 }
 
 /*===== BACK TO TOP BUTTON ===================================*/
-#backToTopButton{
+#backToTopButton {
     position: fixed;
-	bottom: 1rem;
-	right: 3rem;
+    bottom: 1rem;
+    right: 3rem;
 
-	opacity: 0;
-	visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
-	transform: translateY(100%);
-	transition: 300ms;
+    transform: translateY(100%);
+    transition: 300ms;
 }
-#backToTopButton.show{
+
+#backToTopButton.show {
     opacity: 1;
-	visibility: visible;
+    visibility: visible;
 
-	transform: translateY(0);
+    transform: translateY(0);
 }
-#backToTopButton circle{
+
+#backToTopButton circle {
     fill: var(--primary-light);
 }
 
 /*=========================================================*/
 /*===== MEDIA QUERIES =====================================*/
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
-/*=== GERAL ===============================================*/
-.wrapper{
-    width: min(112rem, 100%);
-    display: grid;
-}
-.col-a{
-    grid-area: A;		
-}
-.col-b{
-    grid-area: B;
-}
+    /*=== GERAL ===============================================*/
+    .wrapper {
+        width: min(112rem, 100%);
+        display: grid;
+    }
 
-/*===== START =======================================================*/
-#start .navigation{   
-   gap: 6.5rem;
-}
-#start .navigation nav{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-}
-.line,
-#start .navigation button.close-menu,
-#start .navigation button.open-menu{
-    display: none;
-}
-#start .navigation .menu{
-    display: flex;
-    gap: 4rem;
-}
-#start .navigation .accordion-link{
-    color: var(--White);
-}
-.accordion-item .accordion-link svg path{
-    stroke: var(--White);
-}
-#start .navigation .accordion-item .drop{
-    position: absolute;
+    .col-a {
+        grid-area: A;
+    }
 
-    width: 17rem;
-    
-    transform: translateX(-2rem);    
-}
-#start .navigation .loginAndSignUp{
-    display: flex;
-    gap: 3rem;
-}
-#start .navigation .loginAndSignUp a{
-    color: var(--White);
-}
+    .col-b {
+        grid-area: B;
+    }
 
+    /*===== START =======================================================*/
+    #start {
+        background: url(../images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, var(--Very-light-red), var(--Light-red));
+        background-position: 30% 40%;
 
+        height: 60rem;
+
+        border-radius: 0 0 0 10rem;
+    }
+
+    #start .navigation {
+        gap: 6.5rem;
+    }
+
+    #start .navigation nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .line,
+    #start .navigation button.close-menu,
+    #start .navigation button.open-menu {
+        display: none;
+    }
+
+    #start .navigation .menu {
+        display: flex;
+        gap: 4rem;
+    }
+
+    #start .navigation .accordion-link {
+        color: var(--White);
+        cursor: pointer;
+    }
+
+    #start .loginAndSignUp li:first-child a:hover,
+    #start .navigation .accordion-link:hover {
+        text-decoration: underline;
+    }
+
+    .accordion-item .accordion-link svg path {
+        stroke: var(--White);
+    }
+
+    #start .navigation .accordion-item .drop {
+        position: absolute;
+
+        width: 17rem;
+
+        transform: translateX(-2rem);
+    }
+
+    #start .navigation .loginAndSignUp {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #start .navigation .loginAndSignUp a {
+        color: var(--White);
+    }
+
+    #start .loginAndSignUp li:last-child a {
+        padding-block: 1rem;
+        padding-inline: 4rem;
+
+        background: var(--White);
+        color: var(--Very-light);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 5rem;
+    }
+
+    #start .loginAndSignUp li:last-child a:hover {
+        color: var(--White);
+    }
+
+    #start .loginAndSignUp li:first-child a {
+        display: flex;
+    }
+    #start header h2{
+        font-size: 5rem;
+    }
 }
-

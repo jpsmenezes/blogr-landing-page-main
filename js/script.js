@@ -38,8 +38,7 @@ function activeMenu(){
         - nextElementSibling - retorna o próximo elemento no mesmo nível de árvore. 
     */
     }  
-}
- 
+} 
 ScrollReveal({
     origin: 'bottom',
     distance: '50px',
