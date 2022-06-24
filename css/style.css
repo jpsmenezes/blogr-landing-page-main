@@ -517,4 +517,32 @@ footer .menu-footer:last-child {
     #start header h2{
         font-size: 5rem;
     }
+
+    /*===== DESIGNED FOR THE FUTURE ===============================*/
+    #designedForTheFuture{
+       
+    }
+    #designedForTheFuture .wrapper{       
+        background: url(../images/illustration-editor-desktop.svg) no-repeat;
+        background-position: 70rem 5rem; 
+        
+        height: 100%;
+    }
+    #designedForTheFuture .cols{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		'B A';
+        
+    }
+    #designedForTheFuture .col-b p,
+    #designedForTheFuture .col-b h3{
+        text-align: left;        
+    }
+    #designedForTheFuture .col-a{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    
 }
