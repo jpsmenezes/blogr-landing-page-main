@@ -102,9 +102,6 @@ p {
     margin-inline: auto;
     padding-inline: 2.5rem;
 }
-.col-a img {
-    width: min(37.5rem, 100%);
-}
 
 /*===== START =================================================*/
 #start {
@@ -349,8 +346,8 @@ body.menu-expended #start .navigation nav {
     display: flex;
     justify-content: center;
 }
-#stateOfTheArtInfrastructure h3 {
-    padding-top: 0;
+#stateOfTheArtInfrastructure .col-a img {
+    width: min(37.5rem, 100%);
 }
 #stateOfTheArtInfrastructure .phone {
     transform: translateY(-17rem);
@@ -520,14 +517,21 @@ footer .menu-footer:last-child {
 
     /*===== DESIGNED FOR THE FUTURE ===============================*/
     #designedForTheFuture{
-       
+        position: relative; 
+
+        overflow: hidden;
+
+        margin-bottom: 0;
+        padding-bottom: 27.5rem;        
     }
-    #designedForTheFuture .wrapper{       
-        background: url(../images/illustration-editor-desktop.svg) no-repeat;
-        background-position: 70rem 5rem; 
+    #designedForTheFuture::before{
+        content:url(../images/illustration-editor-desktop.svg);
         
-        height: 100%;
-    }
+        position: absolute;       
+        left: 55%;
+        top: 5rem;       
+       
+    }    
     #designedForTheFuture .cols{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -543,6 +547,52 @@ footer .menu-footer:last-child {
         opacity: 0;
         visibility: hidden;
     }
+    /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
+    section#stateOfTheArtInfrastructure {   
+        background:linear-gradient(var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));        
+       
+        height: 40rem;          
+    }   
+    section#stateOfTheArtInfrastructure .wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'A B';
+
+        height: 100%;
+    }
+    section#stateOfTheArtInfrastructure .col-a {        
+        position: relative;
+    }
+    #stateOfTheArtInfrastructure .col-a img {
+        width: 54rem;
+
+        position: absolute;
+        left: -5rem;
+        top: -6rem;
+
+        transform: none;
+    }
+    section#stateOfTheArtInfrastructure .col-b {
+        transform: none; 
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section#stateOfTheArtInfrastructure .col-b div{
+        width: 50.4rem;                    
+    }
+    section#stateOfTheArtInfrastructure h2 {
+        padding-top: 0;
+        text-align: left;
+    }    
+    section#stateOfTheArtInfrastructure .col-b p {
+        color: var(--White);
+        padding-top: 2.5rem;
+        text-align: left;
+    }
     
-    
+   
 }
