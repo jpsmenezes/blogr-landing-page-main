@@ -549,9 +549,10 @@ footer .menu-footer:last-child {
     }
     /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
     section#stateOfTheArtInfrastructure {   
-        background:linear-gradient(var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));        
-       
-        height: 40rem;          
+        background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+        background-size: 92rem, 200rem;
+        background-position: -14rem -53rem;
+        height: 40rem;             
     }   
     section#stateOfTheArtInfrastructure .wrapper{
         grid-template-columns: 1fr 1fr;
