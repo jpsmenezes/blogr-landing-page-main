@@ -94,10 +94,7 @@
     #designedForTheFuture{
         position: relative; 
 
-        overflow: hidden;
-
-        margin-bottom: 0;
-        padding-bottom: 27.5rem;        
+        overflow: hidden;               
     }
     #designedForTheFuture::before{
         content:url(../images/illustration-editor-desktop.svg);
@@ -129,7 +126,7 @@
         background-size: 92rem, 230rem;
         background-position: -14rem -53rem;
         height: 40rem;        
-        margin-bottom: 0;     
+        padding-bottom: 0;     
     }   
     section#stateOfTheArtInfrastructure .wrapper{
         grid-template-columns: 1fr 1fr;
@@ -173,8 +170,7 @@
     
     /*===== FREE OPEN SIMPLE ======================================*/
     #freeOpenSimple{    
-        padding-block: 20rem;  
-        margin-bottom: 0;     
+        padding-block: 20rem;                 
     }   
     #freeOpenSimple .wrapper{
         display: grid;

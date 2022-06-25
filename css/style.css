@@ -57,6 +57,7 @@ body {
 
     overflow: overlay;
     /*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
+    background-color: var(--light-gray);
 }
 h2 {
     font-size: 3.6rem;
@@ -322,9 +323,7 @@ body.menu-expended #start .navigation nav {
 
 /*===== DESIGNED FOR THE FUTURE ===============================*/
 #designedForTheFuture {
-    margin-bottom: 27.5rem;
-
-    background-color: var(--light-gray);
+    padding-bottom: 27.5rem;     
 }
 #designedForTheFuture header h3 {
     padding: 10.5rem 0 5rem;
@@ -339,12 +338,10 @@ body.menu-expended #start .navigation nav {
 /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
 #stateOfTheArtInfrastructure {
     background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
-    background-position: 50% -1000%;
+    background-position: -8rem -400%;
     background-size: 60rem, auto, auto;
 
-    border-radius: 0 10rem 0 10rem;
-
-    margin-bottom: 8rem;
+    border-radius: 0 10rem 0 10rem;    
 }
 #stateOfTheArtInfrastructure .col-a {
     display: flex;
@@ -369,9 +366,7 @@ body.menu-expended #start .navigation nav {
 
 /*===== FREE OPEN SIMPLE ======================================*/
 #freeOpenSimple {
-    margin-bottom: 10rem;
-
-    background-color: var(--light-gray);
+    padding-block: 10rem;   
 }
 #freeOpenSimple .col-a {
     display: flex;
