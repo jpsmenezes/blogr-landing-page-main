@@ -42,7 +42,7 @@ Users should be able to:
 
 ## Author
 
-- Instagram - [João Paulo]([https://www.your-site.com](https://www.instagram.com/joaopaulox1/))
+- Instagram - [joaopaulox1]([https://www.your-site.com](https://www.instagram.com/joaopaulox1/))
 - Frontend Mentor - [jpsmenezes](https://www.frontendmentor.io/profile/jpsmenezes)
 
 
