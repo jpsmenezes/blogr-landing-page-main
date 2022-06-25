@@ -55,7 +55,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
 
-    overflow: overlay;
+    overflow: overlay;    
     /*coloca o scroll da página suspenso(sobrepõe o scroll na pagina), ou seja, a largura do scroll não é contada*/
     background-color: var(--light-gray);
 }
@@ -338,7 +338,7 @@ body.menu-expended #start .navigation nav {
 /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
 #stateOfTheArtInfrastructure {
     background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
-    background-position: -8rem -400%;
+    background-position: -12rem -400%;
     background-size: 60rem, auto, auto;
 
     border-radius: 0 10rem 0 10rem;    

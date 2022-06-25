@@ -123,8 +123,8 @@
     /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
     section#stateOfTheArtInfrastructure {   
         background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
-        background-size: 92rem, 230rem;
-        background-position: -14rem -53rem;
+        background-size: 92rem, 270rem;
+        background-position: -14rem -48rem;
         height: 40rem;        
         padding-bottom: 0;     
     }   
