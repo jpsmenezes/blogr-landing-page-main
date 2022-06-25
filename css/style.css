@@ -355,9 +355,12 @@ body.menu-expended #start .navigation nav {
 #stateOfTheArtInfrastructure .col-b div {
     transform: translateY(-13rem);
 }
-#stateOfTheArtInfrastructure .col-b p {
-    color: var(--White);
+#stateOfTheArtInfrastructure .col-b p {   
+    color: var(--White);    
+    line-height: 190%;
+
     padding-top: 2.5rem;
+
 }
 
 /*===== FREE OPEN SIMPLE ======================================*/
@@ -367,6 +370,9 @@ body.menu-expended #start .navigation nav {
 #freeOpenSimple .col-a {
     display: flex;
     justify-content: center;
+}
+#freeOpenSimple p{
+    line-height: 190%; 
 }
 
 /*===== FOOTER ===============================================*/
@@ -609,13 +615,24 @@ footer .menu-footer:last-child {
     #freeOpenSimple .col-a img{
         position: absolute;
         left: -35rem;
-        top: -10rem;
+        top: -7rem;
         width: 87rem        
     }
     #freeOpenSimple .col-b p,
     #freeOpenSimple .col-b h3{
         text-align: left;
     }
-   
-    
+
+    /*===== FOOTER ===============================================*/
+    footer{
+        padding-block: 7rem;     
+    }
+    footer .wrapper{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    footer .menu-footer{
+        padding-bottom: 0;
+    }
 }
