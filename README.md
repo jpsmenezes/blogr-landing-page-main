@@ -27,13 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 ![desktop-preview](https://user-images.githubusercontent.com/92182457/175781890-03c0189f-e5f7-4d8e-920f-37f9776fcd34.jpg)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [blogr-landing-page-main]( https://jpsmenezes.github.io/blogr-landing-page-main/)
 
 ## My process
 
@@ -47,9 +46,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Instagram - [João Paulo]([https://www.your-site.com](https://www.instagram.com/joaopaulox1/))
+- Frontend Mentor - [jpsmenezes](https://www.frontendmentor.io/profile/jpsmenezes)
 
 
 
