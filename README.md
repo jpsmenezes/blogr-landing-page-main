@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-and-javascript-zsnJadkVtu)
 - Live Site URL: [blogr-landing-page-main]( https://jpsmenezes.github.io/blogr-landing-page-main/)
 
 ## My process
