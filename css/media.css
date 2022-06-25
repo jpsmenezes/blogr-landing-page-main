@@ -122,13 +122,14 @@
         opacity: 0;
         visibility: hidden;
     }
-    
+
     /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
     section#stateOfTheArtInfrastructure {   
         background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
         background-size: 92rem, 230rem;
         background-position: -14rem -53rem;
-        height: 40rem;             
+        height: 40rem;        
+        margin-bottom: 0;     
     }   
     section#stateOfTheArtInfrastructure .wrapper{
         grid-template-columns: 1fr 1fr;
@@ -172,7 +173,8 @@
     
     /*===== FREE OPEN SIMPLE ======================================*/
     #freeOpenSimple{    
-        padding-block: 20rem;
+        padding-block: 20rem;  
+        margin-bottom: 0;     
     }   
     #freeOpenSimple .wrapper{
         display: grid;

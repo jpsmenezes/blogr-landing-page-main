@@ -26,6 +26,7 @@
     /*(body copy)*/
     --Very-dark-black: hsl(240, 10%, 16%);
     /*(footer background)*/
+    --light-gray: hsl(0, 0%, 96%);
 
     /*Gradient*/
     /*Background gradient - Intro/CTA mobile nav:*/
@@ -322,6 +323,8 @@ body.menu-expended #start .navigation nav {
 /*===== DESIGNED FOR THE FUTURE ===============================*/
 #designedForTheFuture {
     margin-bottom: 27.5rem;
+
+    background-color: var(--light-gray);
 }
 #designedForTheFuture header h3 {
     padding: 10.5rem 0 5rem;
@@ -331,6 +334,7 @@ body.menu-expended #start .navigation nav {
     display: flex;
     justify-content: center;
 }
+
 
 /*===== STATE OF THE ART INFRASTRUCTURE =======================*/
 #stateOfTheArtInfrastructure {
@@ -366,6 +370,8 @@ body.menu-expended #start .navigation nav {
 /*===== FREE OPEN SIMPLE ======================================*/
 #freeOpenSimple {
     margin-bottom: 10rem;
+
+    background-color: var(--light-gray);
 }
 #freeOpenSimple .col-a {
     display: flex;
