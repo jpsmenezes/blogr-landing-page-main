@@ -45,9 +45,18 @@
         color: var(--White);
         cursor: pointer;
     }
-    #start .loginAndSignUp li:first-child a:hover,
-    #start .navigation .accordion-link:hover {
-        text-decoration: underline;
+    #start .loginAndSignUp li:first-child a::after,
+    #start .navigation .accordion-link::after{
+        content: "";
+        width: 0%;
+        height: .2rem;
+        display: block;
+        background-color: #fff;
+        transition: 200ms;
+    }
+    #start .loginAndSignUp li:first-child a:hover::after,
+    #start .navigation .accordion-link:hover::after {
+        width: 100%;
     }
     .accordion-item .accordion-link svg path {
         stroke: var(--White);
@@ -84,7 +93,7 @@
         color: var(--White);
     }
     #start .loginAndSignUp li:first-child a {
-        display: flex;
+        display: inline-block;       
     }
     #start header h2{
         font-size: 5rem;

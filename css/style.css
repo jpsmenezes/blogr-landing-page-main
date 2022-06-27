@@ -150,7 +150,7 @@ p {
 #start header a:nth-child(1) {
     background-color: var(--White);
     color: var(--Very-light);
-    transition: 100ms;
+    transition: 200ms;
 }
 #start header a:nth-child(1):hover {
     background-color: var(--Very-light);
@@ -159,7 +159,7 @@ p {
 #start header a:nth-child(2) {
     border: 1px solid var(--White);
     color: var(--White);
-    transition: 100ms;
+    transition: 200ms;
 }
 #start header a:nth-child(2):hover {
     background-color: var(--White);
@@ -239,7 +239,7 @@ body.menu-expended #start .navigation nav {
 .navigation .loginAndSignUp li:first-child a {
     color: var(--Very-dark);
 }
-.menu-expended .navigation .loginAndSignUp li:last-child a {
+.menu-expended .loginAndSignUp li:last-child a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,6 +253,8 @@ body.menu-expended #start .navigation nav {
     border-radius: 5rem;
 
     margin-top: 2rem;
+
+    transition: 200ms;
 }
 #start .navigation .loginAndSignUp li:last-child a:hover {
     background: var(--Very-light);
@@ -396,10 +398,18 @@ footer a.logo {
 footer .menu-footer a {
     font-size: 1.8rem;
     line-height: 180%;
-    color: var(--Grayish);
+    color: var(--Grayish);   
 }
-footer .menu-footer a:hover {
-    text-decoration: underline;
+footer .menu-footer a::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--primary-light);
+    transition: 200ms;
+}
+footer .menu-footer a:hover::after {
+      width: 100%;
 }
 footer .menu-footer {
     padding-bottom: 6rem;
