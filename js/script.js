@@ -1,6 +1,7 @@
 window.addEventListener('scroll', onScroll);
 
 const accordionItem = document.querySelectorAll('.accordion-item');
+
 accordionItem.forEach(item => item.addEventListener('click', activeMenu)) ;
 document.querySelector('.open-menu').addEventListener('click', openMenu);
 document.querySelector('.close-menu').addEventListener('click', closeMenu);
